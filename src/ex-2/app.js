@@ -7,11 +7,11 @@ Escribe un programa que escriba en la pantalla “La suma de 3 + 5 es <resultado
 * * * Declarar variables de los numeros que queremos sumar.
 * * * Declarar el resultado como la suma de las variables anteriores.
 * * Mostrar el resultado como mensaje en la pantalla.
-* * * Declarar variable del mensaje que queremos enviar.
+* * * Declarar variable del mensaje que queremos llamar.
 * * * Declarar variable por como queremos llamarlo. (por id).
-* * * Declarar una función para imprimir el mensaje.
+* * * Declarar una función para imprimir el titulo.
 * * * Dentro del objeto con el que vamos a llamar, escribir la variable que queremos enviar.
-* * * llamar a la función para que funcione.
+* * * llamar a la función para que funcione automaticamente.
 */
 
 const numberOne = 3;

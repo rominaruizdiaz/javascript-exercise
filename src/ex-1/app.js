@@ -7,7 +7,7 @@ Escribe un programa que escriba en la pantalla un texto de tipo <h1> que diga �
 * * Declarar variable por como queremos llamarlo. (por id).
 * * Declarar una función para imprimir el titulo.
 * * Dentro del objeto con el que vamos a llamar, escribir la variable que queremos enviar.
-* * llamar a la función para que funcione.
+* * llamar a la función para que funcione automaticamente.
 */
 
 const title = "Hello Javascript!"

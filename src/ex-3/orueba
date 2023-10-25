@@ -1,0 +1,7 @@
+function SayHello() {
+    usernameData.innerHTML = `
+        <h1>{messageTo}</h1>
+    `
+}
+const messageConteiner = document.getElementById('msg-to');
+let messageTo = "Hola " + username;

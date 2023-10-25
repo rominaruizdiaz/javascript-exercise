@@ -1,0 +1,17 @@
+form {
+    width: 300px;
+    height: auto;
+    padding: 30px;
+    background-color: rgb(219, 239, 255);
+}
+input:invalid + span:after {
+    position: absolute;
+    content: url(assets/cross-mark-svgrepo-com.svg);
+    padding-left: 5px;
+}
+  
+input:valid + span:after {
+    position: absolute;
+    content: url(assets/gui-check-yes-svgrepo-com.svg);
+    padding-left: 5px;
+}
