@@ -1,26 +1,20 @@
-/*Escribe un programa que pida una frase y escriba cuantas veces aparece la letra a.
+/*Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres..
  * Conectar archivo javascript y css al html.
  * Crear el formulario.
- * * obtener la frase.
- * * convertir la frase en minusculas.
- * * obtener cuantas "a" aparecen en la frase.
+ * * obtener los numeros.
+ * * comparar los numeros.
+ * * obtener el numero mas alto de los tres.
  * * * mostrar el resultado en el html.
  */
 
-function findVocalA() {
-  let phrase = document.getElementById("phrase").value;
+function compareNumbers() {
+  let numb1 = document.getElementById("numbOne").value;
+  let numb2 = document.getElementById("numbTwo").value;
+  let numb3 = document.getElementById("numbThree").value;
 
-  let phraseLowerCase = phrase.toLowerCase();
-  let vocal = "a";
-  let vocalCounter = 0;
-
-  for (let i = 0; i < phraseLowerCase.length; i++) {
-    if (phraseLowerCase[i] === vocal) {
-      vocalCounter++;
-    }
-  }
+  let biggerNumber = Math.max(numb1, numb2, numb3);
 
   document.getElementById("result").innerHTML = `
-    <p>hay ${vocalCounter} "a" en esta frase. </p>
+    <p>${biggerNumber}. </p>
     `;
 }
