@@ -3,26 +3,21 @@
 Conectar archivo javascript y css al html.
 Crear el formulario.
 almacenar el numero en una variable.
-buscar que numeros son divisibles por el numero y almacenarlos.
+buscar que por lo menos un numero que es divisible.
 mostrar el resultado en el html.
 */
 
 function findDivisors() {
-  let number = parseInt(document.getElementById("number").value);
-
+  let number = document.getElementById("number").value;
   let divisors = [2, 3, 5, 7];
-  let yesDivisors = [];
+  let resultElement = document.getElementById("result");
 
-  
-  for (let divisor of divisors) {
-    if (number % divisor === 0) {
-      yesDivisors.push(divisor)
+  for (let i = 0; i < divisors.length; i++) {
+    if (number % divisors[i] === 0) {
+      resultElement.innerHTML = `${number} es divisible por ${divisors[i]}.`;
+      return;
     }
   }
 
-  if (yesDivisors.length > 0) {
-    result.innerHTML += `<p>${number} es divisible por: ${yesDivisors.join(', ')}.</p>`;
-  } else {
-    result.innerHTML += `<p>${number} no es divisible por ningún número en la lista.</p>`;
-  }
+  resultElement.innerHTML = `${number} no es divisible por 2, 3, 5 ni 7.`;
 }
