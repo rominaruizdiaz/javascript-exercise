@@ -1,10 +1,10 @@
-/*Escribe un programa que pida una frase y escriba las vocales que aparecen.
+/*Escribe un programa que pida una frase y escriba cuantas vocales hay en la frase.
  * Conectar archivo javascript y css al html.
  * Crear el formulario.
  * * obtener la frase.
  * * convertir la frase en minusculas.
  * realizar una lista de las vocales.
- * * obtener las vocales que aparecen en la frase.
+ * * obtener cuantas vocales aparecen en la frase.
  * * * mostrar el resultado en el html.
  */
 
@@ -13,15 +13,15 @@ function findVocals() {
 
   let phraseLowerCase = phrase.toLowerCase();
   let vocals = ["a", "e", "i", "o", "u"];
-  let vocalsFound = [];
+  let vocalCounter = 0;
 
-
-  for (let vocal of vocals) {
-    if (phraseLowerCase.includes(vocal)) {
-      vocalsFound.push(vocal);
+  for (let i = 0; i < phraseLowerCase.length; i++) {
+    if (vocals.includes(phraseLowerCase[i])) {
+      vocalCounter++;
     }
   }
 
-  document.getElementById("result").innerHTML = `<p>Vocales encontradas: ${vocalsFound}</p>`;
-
+  document.getElementById("result").innerHTML = `
+    <p>hay ${vocalCounter} vocales en esta frase. </p>
+    `;
 }
