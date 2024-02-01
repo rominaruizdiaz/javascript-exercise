@@ -6,12 +6,12 @@ form {
 }
 input:invalid + span:after {
     position: absolute;
-    content: url(assets/cross-mark-svgrepo-com.svg);
+    content: url(./assets/cross-mark-svgrepo-com.svg);
     padding-left: 5px;
 }
   
 input:valid + span:after {
     position: absolute;
-    content: url(assets/gui-check-yes-svgrepo-com.svg);
+    content: url(./assets/gui-check-yes-svgrepo-com.svg);
     padding-left: 5px;
 }
